@@ -1,3 +1,117 @@
-*{
+* {
     font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #c4e0f7;
+    font-size: 18px;
+}
+
+main {
+    background-color: #ffffff;
+    margin: 50px auto;
+    width: 500px;
+    border-radius: 30px;
+}
+
+input, button, select {
+    font-size: 18px;
+}
+
+h1 {
+    padding: 30px 20px 20px 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#tasks-container {
+    padding: 20px;
+}
+
+.task {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.task:hover {
+    background-color: #d8bfd8;
+}
+
+.task .checkbox-container {
+    width: calc(100% - 306px);
+}
+
+.task button {
+    border: 0;
+    background: none;
+    background-image: url(img/delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+}
+
+.task button:hover svg {
+    fill: #fdaefd;
+}
+
+#list-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+#list-container .list {
+    background-color: #fc8ffc;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#add-container {
+    background-color: #f0e8f0;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#add-container form {
+    display: flex;
+    align-items: baseline;
+}
+
+#add-container form select {
+    border: 0;
+    background-color: transparent;
+    padding: 5px;
+    outline: none;
+    width: 30% ;
+    margin-left: 10px;
+    justify-content: flex-end;
+}
+
+#add-container form input {
+    padding: 5px;
+    width: 70%;
+    border: 0;
+    background: transparent;
+    outline: none;
+}
+
+#add-container form::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid #aaaaaa;
+    border-width: 0 3px 3px 0;
+    transform: rotate(-45deg);
+    margin-right: 5px;
 }
