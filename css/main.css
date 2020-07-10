@@ -40,13 +40,13 @@ h1 {
 }
 
 .task .checkbox-container {
-    width: calc(100% - 306px);
+    width: calc(100% - 36px);
 }
 
 .task button {
     border: 0;
     background: none;
-    background-image: url(img/delete.svg);
+    background-image: url(../img/delete.svg);
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
