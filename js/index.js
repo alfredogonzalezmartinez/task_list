@@ -90,7 +90,7 @@
         return `
             <div class="task" data-id="${task.id}">
                 <label class="checkbox-container">
-                    ${task.text}
+                    ${task.text.replace(/</g, "&lt;")} 
                     <input type="checkbox" ${(task.completed) ? 'checked="checked"' : ''}/>
                     <span class="checkmark"></span>
                 </label>
