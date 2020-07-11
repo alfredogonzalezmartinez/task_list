@@ -56,8 +56,11 @@ h1 {
     height: 32px;
 }
 
-.task button:hover svg {
-    fill: #ff0000;
+.task button:hover {
+    background-image: none;
+    background-color: red;
+    -webkit-mask: url(../img/delete.svg) no-repeat 50% 50%;
+    mask: url(../img/delete.svg) no-repeat 50% 50%;
 }
 
 #list-container {
